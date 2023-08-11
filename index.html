@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="filter">
+        <strong>COLOR</strong>
+        <div>
+            <input data-filter="green" type="checkbox" class="checkbox color green-cb"><span>Green</span>
+        </div>
+        <div>
+            <input data-filter="yellow" type="checkbox" class="checkbox color yellow-cb"><span>Yellow</span>
+        </div>
+        <div>
+            <input data-filter="red" type="checkbox" class="checkbox color red-cb"><span>Red</span>
+        </div>
+        <div><input data-filter="blue" type="checkbox" class="checkbox color blue-cb"><span>Blue</span>
+        </div>
+
+        <br>
+
+        <strong>OUTLINE</strong>
+        <div><input data-filter="dashed" type="checkbox" class="checkbox outline dashed-cb"><span>Dashed</span></div>
+        <div><input data-filter="solid" type="checkbox" class="checkbox outline solid-cb"><span>Solid</span></div>
+        <div><input data-filter="dotted" type="checkbox" class="checkbox outline dotted-cb"><span>Dotted</span></div>
+        <div><input data-filter="double" type="checkbox" class="checkbox outline double-cb"><span>Double</span></div>
+    </div>
+    <div class="container">
+        <div class="catalog">
+            <div class="card green dashed"></div>
+            <div class="card yellow solid"></div>
+            <div class="card red dotted"></div>
+            <div class="card blue dashed"></div>
+            <div class="card yellow solid"></div>
+            <div class="card green dotted"></div>
+            <div class="card blue dashed"></div>
+            <div class="card blue double"></div>
+            <div class="card green dotted"></div>
+            <div class="card red solid"></div>
+            <div class="card yellow dashed"></div>
+            <div class="card red dashed"></div>
+            <div class="card yellow solid"></div>
+            <div class="card green dotted"></div>
+            <div class="card red solid"></div>
+            <div class="card green double"></div>
+            <div class="card blue double"></div>
+            <div class="card green dotted"></div>
+            <div class="card blue double"></div>
+            <div class="card yellow double"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

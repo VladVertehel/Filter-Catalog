@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20%;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+
+.card {
+    width: 240px;
+    height: 300px;
+    margin: 20px 10px;
+}
+
+.green {
+    background-color: rgb(13, 186, 13);
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.dashed {
+    outline: 10px dashed black;
+}
+
+.solid {
+    outline: 10px black solid;
+}
+
+.dotted {
+    outline: 10px dotted black;
+}
+
+.double {
+    outline: 10px double black;
+}
+
+.filter {
+    position: fixed;
+    transform: translate(50%, 50%);
+}
+
+.checkbox {
+    scale: 120%;
+    margin: 6px;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width:1380px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:920px) {
+    .catalog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:650px) {
+    .card {
+        width: 150px;
+        height: 230px;
+    }
+
+    .catalog {
+        justify-items: end;
+    }
+}
